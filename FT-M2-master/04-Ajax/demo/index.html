@@ -10,8 +10,8 @@
 <body>
   <div id='respuesta'>
   </div>
-  <button class='boton'>AJAX!</button>
-  <script type="text/javascript">
+  <!-- <button class='boton'>AJAX!</button>
+   <script type="text/javascript">
     var index = 1;
     $('.boton').click(function () {
       // GET AJAX
@@ -27,7 +27,31 @@
       });
 
     });
+
+    
+  </script> --> -->
+  <!-- <script type="text/javascript">
+    fetch('https://jsonplaceholder.typicode.com/posts',
+    method:'post',// post, delet y Get
+    body:JSON.stringify(obj)
+
+    });
+
+  </script> -->
+  <script type="text/javascript">
+    document.getElementsByClassName('personajes')[0].addEventListener('click',function (params) {
+      axios('https//rickandmortyapi.cm/api/character')
+      .then(characters=>{
+        let arr=characters.data.results
+        arr.map(e=>{
+          let a= document.createElement('a')
+          a,innerText=
+        })
+            })
+    })
+
   </script>
+
 </body>
 
 </html>

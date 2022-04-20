@@ -9,20 +9,39 @@
 </head>
 <body>
   <button id='boton'>Ver Amigos</button>
-  <ul id='lista'>
-  </ul>
+  <ul id='lista'></ul>
 
   <h2>Ver Amigos</h2>
-  <img src='https://upload.wikimedia.org/wikipedia/commons/c/c7/Loading_2.gif' />
+  <!-- <img src='https://upload.wikimedia.org/wikipedia/commons/c/c7/Loading_2.gif' /> -->
   <hr>
-  <input id='input'></input>
+  <input id='input' placeholder="Busca Amigo" ></input>
+  
   <button id='search'>Buscar</button>
-  <span id='amigo'></span>
+  <div id='amigo'></div>
 
   <hr>
-  <input id='inputDelete'></input>
+  <input id='inputDelete' placeholder="Deletar Amigo"></input>
   <button id='delete'>Delete</button>
+  <div id="amigoDeletado"></div>
   <span id='sucess'></span>
+
+  <hr>
+  <H3>Crea Amigo</H3>
+<form >
+    <label >Name</label>
+  <input type="text" id="name">
+  <br>
+  <label > Age</label>
+  <input type="text" id="age">
+  <br>
+  <label > Email </label>
+  <input type="text" id="email">
+  <br>
+  <button value="Enviar" id="enviarform">Enviar Infor</button>
+
+</form>
+
+
   <script src="index.js"></script>
 </body>
 </html>
